@@ -13,9 +13,10 @@ body {
 }
 
 .imagem{
-    max-width: 290px;
+    max-width: 390px;
     border: 10px solid #22d4fd;
-    margin-left: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 /* styling for Pen, unrelated to border-image */
 }
 
@@ -56,13 +57,18 @@ main.atividade {
 .botoes{
     display: flex;
     gap: 2rem;
+    flex-direction: column;
 }
 
 a.atividade__conteudo__links {
     display: inline-block;
     padding: 10px 20px;
     font-family: "Montserrat", sans-serif;
-    background-color: #22d4fd;
+    background-color: #000;
+    border-color: #22d4fd;
+    border-width: 2px;
+    border-style: solid;
+
     /* Cor de fundo */
     color: white;
     /* Cor do texto */
@@ -76,6 +82,10 @@ a.atividade__conteudo__links {
     /* Tamanho da fonte */
     transition: background-color 0.3s ease;
     /* Efeito de transição ao passar o mouse */
+}
+
+.atividade__conteudo__links .fa{
+    color:#22d4fd
 }
 
 a.atividade__conteudo__links:hover {
